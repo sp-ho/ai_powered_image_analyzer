@@ -23,7 +23,7 @@ Before running this application, ensure you have the following:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/sp-ho/ai_powered_image_analyzer.git
 cd <repository-folder>
 ```
 

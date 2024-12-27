@@ -24,7 +24,7 @@ client = ImageAnalysisClient(
 )
 
 # set up the title of the web page
-st.title('Computer Vision with Streamlit')
+st.title('AI-Powered Image Analyzer')
 
 # set up a form for image upload indicating the label and image types
 uploadedFile = st.file_uploader('Choose image', type=['jpg', 'jpeg', 'png'])

@@ -1,0 +1,4 @@
+streamlit
+azure-ai-vision
+python-dotenv
+pillow

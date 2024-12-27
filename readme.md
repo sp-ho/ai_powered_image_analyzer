@@ -2,6 +2,10 @@
 
 A Streamlit-based web application that utilizes Azure's Computer Vision API to analyze uploaded images and provide captions, dense captions, and tags.
 
+## Live Demo
+
+Access the live application here: [AI-Powered Image Analyzer](https://computer-vision-ai.livelyrock-b84a21ad.eastus.azurecontainerapps.io)
+
 ## Features
 
 - **Image Upload**: Upload images in JPG, JPEG, or PNG format.
@@ -45,10 +49,12 @@ The requirements.txt file should include:
 
 Create a .env file in the project root directory and add your Azure Computer Vision credentials:
 
+```bash
 VISION_KEY=<Your Azure Vision Key>
 VISION_ENDPOINT=<Your Azure Vision Endpoint>
+```
 
-### 4. Run the Application
+### 4. Run the Application Locally
 
 Run the Streamlit app:
 
@@ -66,3 +72,24 @@ streamlit run app.py
 ## Error Handling
 
 If there is an error during the image analysis, the application will display an appropriate error message.
+
+## Deployment
+
+1. Build the Docker Image
+
+```bash
+docker build -t <dockerhub-username>/<image-name>:<tag> .
+```
+
+2. Push the Docker Image to Docker Hub
+
+```bash
+docker push <dockerhub-username>/<image-name>:<tag>
+```
+
+3. Deploy the Image to Azure Container App
+
+- The application is deployed using Azure Container Apps, showcasing a seamless integration of cloud-based AI services.
+- Azure Container App is configured to automatically pull the latest image from Docker Hub when a new version is available.
+- No manual action is needed on the Azure portal unless you need to troubleshoot or update configuration settings.
+- For details on deploying your own version, refer to [Azure Container Apps documentation](https://learn.microsoft.com/en-us/azure/container-apps/).

@@ -2,10 +2,6 @@
 
 A Streamlit-based web application that utilizes Azure's Computer Vision API to analyze uploaded images and provide captions, dense captions, and tags.
 
-## Live Demo
-
-Access the live application here: [AI-Powered Image Analyzer](https://computer-vision-ai.livelyrock-b84a21ad.eastus.azurecontainerapps.io)
-
 ## Features
 
 - **Image Upload**: Upload images in JPG, JPEG, or PNG format.
